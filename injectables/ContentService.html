@@ -1,0 +1,1594 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>castcle-api documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">castcle-api documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >ContentService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>libs/database/src/lib/services/content.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_accountModel" >_accountModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_contentModel" >_contentModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_credentialModel" >_credentialModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_engagementModel" >_engagementModel</a>
+                            </li>
+                            <li>
+                                <a href="#_getAuthorFromUser" >_getAuthorFromUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_revisionModel" >_revisionModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_userModel" >_userModel</a>
+                            </li>
+                            <li>
+                                <a href="#checkUserPermissionForEditContent" >checkUserPermissionForEditContent</a>
+                            </li>
+                            <li>
+                                <a href="#deleteContentFromId" >deleteContentFromId</a>
+                            </li>
+                            <li>
+                                <a href="#getContentFromId" >getContentFromId</a>
+                            </li>
+                            <li>
+                                <a href="#getContentRevisions" >getContentRevisions</a>
+                            </li>
+                            <li>
+                                <a href="#getContentsFromUser" >getContentsFromUser</a>
+                            </li>
+                            <li>
+                                <a href="#getLikeParticipants" >getLikeParticipants</a>
+                            </li>
+                            <li>
+                                <a href="#likeContent" >likeContent</a>
+                            </li>
+                            <li>
+                                <a href="#quoteContentFromUser" >quoteContentFromUser</a>
+                            </li>
+                            <li>
+                                <a href="#recastContentFromUser" >recastContentFromUser</a>
+                            </li>
+                            <li>
+                                <a href="#recoverContentFromId" >recoverContentFromId</a>
+                            </li>
+                            <li>
+                                <a href="#unLikeContent" >unLikeContent</a>
+                            </li>
+                            <li>
+                                <a href="#updateContentFromId" >updateContentFromId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createContentFromUser" >createContentFromUser</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_accountModel: <a href="../classes/Account.html" target="_self">Model&lt;AccountDocument&gt;</a>, _credentialModel: <a href="../interfaces/CredentialModel.html" target="_self">CredentialModel</a>, _userModel: <a href="../classes/User.html" target="_self">Model&lt;UserDocument&gt;</a>, _contentModel: <a href="../classes/Content.html" target="_self">Model&lt;ContentDocument&gt;</a>, _revisionModel: <a href="../classes/Revision.html" target="_self">Model&lt;RevisionDocument&gt;</a>, _engagementModel: <a href="../classes/Engagement.html" target="_self">Model&lt;EngagementDocument&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">libs/database/src/lib/services/content.service.ts:52</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_accountModel</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Account.html" target="_self" >Model&lt;AccountDocument&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_credentialModel</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../interfaces/CredentialModel.html" target="_self" >CredentialModel</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_userModel</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/User.html" target="_self" >Model&lt;UserDocument&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_contentModel</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Content.html" target="_self" >Model&lt;ContentDocument&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_revisionModel</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Revision.html" target="_self" >Model&lt;RevisionDocument&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_engagementModel</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Engagement.html" target="_self" >Model&lt;EngagementDocument&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createContentFromUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createContentFromUser</b></span>
+                        <a href="#createContentFromUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createContentFromUser(user: <a href="../classes/User.html" target="_self">UserDocument</a>, contentDto: <a href="../classes/SaveContentDto.html" target="_self">SaveContentDto</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">libs/database/src/lib/services/content.service.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >UserDocument</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the user that create this content if contentDto has no author this will be author by default</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>contentDto</td>
+                                    <td>
+                                                <code><a href="../classes/SaveContentDto.html" target="_self" >SaveContentDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the content Dto that required for create a conent</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>content.save() result</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_accountModel"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_accountModel</b></span>
+                        <a href="#_accountModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Account.html" target="_self" >Model&lt;AccountDocument&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @InjectModel(&#x27;Account&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">libs/database/src/lib/services/content.service.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_contentModel"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_contentModel</b></span>
+                        <a href="#_contentModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Content.html" target="_self" >Model&lt;ContentDocument&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @InjectModel(&#x27;Content&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">libs/database/src/lib/services/content.service.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_credentialModel"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_credentialModel</b></span>
+                        <a href="#_credentialModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/CredentialModel.html" target="_self" >CredentialModel</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @InjectModel(&#x27;Credential&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">libs/database/src/lib/services/content.service.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_engagementModel"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_engagementModel</b></span>
+                        <a href="#_engagementModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Engagement.html" target="_self" >Model&lt;EngagementDocument&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @InjectModel(&#x27;Engagement&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">libs/database/src/lib/services/content.service.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getAuthorFromUser"></a>
+                    <span class="name">
+                        <span ><b>_getAuthorFromUser</b></span>
+                        <a href="#_getAuthorFromUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="326" class="link-to-prism">libs/database/src/lib/services/content.service.ts:326</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>transform User =&gt; Author object for create a content and use as DTO</p>
+</div>
+                </td>
+            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>user</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_revisionModel"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_revisionModel</b></span>
+                        <a href="#_revisionModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Revision.html" target="_self" >Model&lt;RevisionDocument&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @InjectModel(&#x27;Revision&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">libs/database/src/lib/services/content.service.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_userModel"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_userModel</b></span>
+                        <a href="#_userModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >Model&lt;UserDocument&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @InjectModel(&#x27;User&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">libs/database/src/lib/services/content.service.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkUserPermissionForEditContent"></a>
+                    <span class="name">
+                        <span ><b>checkUserPermissionForEditContent</b></span>
+                        <a href="#checkUserPermissionForEditContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="197" class="link-to-prism">libs/database/src/lib/services/content.service.ts:197</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>check content.author.id === user._id</p>
+</div>
+                </td>
+            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>user</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>content</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteContentFromId"></a>
+                    <span class="name">
+                        <span ><b>deleteContentFromId</b></span>
+                        <a href="#deleteContentFromId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">libs/database/src/lib/services/content.service.ts:108</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Set content visibility to deleted</p>
+</div>
+                </td>
+            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>id</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getContentFromId"></a>
+                    <span class="name">
+                        <span ><b>getContentFromId</b></span>
+                        <a href="#getContentFromId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">libs/database/src/lib/services/content.service.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>id</td>
+                                                    <td>
+                                                            <code><p>get content from content&#39;s id</p>
+</code>
+                                                    </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getContentRevisions"></a>
+                    <span class="name">
+                        <span ><b>getContentRevisions</b></span>
+                        <a href="#getContentRevisions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="240" class="link-to-prism">libs/database/src/lib/services/content.service.ts:240</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getContentsFromUser"></a>
+                    <span class="name">
+                        <span ><b>getContentsFromUser</b></span>
+                        <a href="#getContentsFromUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="208" class="link-to-prism">libs/database/src/lib/services/content.service.ts:208</a></div>
+                        </td>
+                    </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>user</td>
+                                                    <td>
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                    <td>options</td>
+                                                    <td>
+                                                            <code><p>contain option for sorting page = skip + 1,</p>
+</code>
+                                                    </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLikeParticipants"></a>
+                    <span class="name">
+                        <span ><b>getLikeParticipants</b></span>
+                        <a href="#getLikeParticipants"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="295" class="link-to-prism">libs/database/src/lib/services/content.service.ts:295</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>get how many user like this content by populate user from engagement and filter it with user._id</p>
+</div>
+                </td>
+            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>content</td>
+                                                    <td>
+                                                            <code><p>current content</p>
+</code>
+                                                    </td>
+                                            </tr>
+                                            <tr>
+                                                    <td>user</td>
+                                                    <td>
+                                                            <code><p>current user</p>
+</code>
+                                                    </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="likeContent"></a>
+                    <span class="name">
+                        <span ><b>likeContent</b></span>
+                        <a href="#likeContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="250" class="link-to-prism">libs/database/src/lib/services/content.service.ts:250</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="quoteContentFromUser"></a>
+                    <span class="name">
+                        <span ><b>quoteContentFromUser</b></span>
+                        <a href="#quoteContentFromUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="342" class="link-to-prism">libs/database/src/lib/services/content.service.ts:342</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recastContentFromUser"></a>
+                    <span class="name">
+                        <span ><b>recastContentFromUser</b></span>
+                        <a href="#recastContentFromUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="374" class="link-to-prism">libs/database/src/lib/services/content.service.ts:374</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recoverContentFromId"></a>
+                    <span class="name">
+                        <span ><b>recoverContentFromId</b></span>
+                        <a href="#recoverContentFromId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">libs/database/src/lib/services/content.service.ts:144</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>update aggregator of recast/quote and get content status back to publish</p>
+</div>
+                </td>
+            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Description</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>id</td>
+                                                    <td>
+                                                            <code><p>of content</p>
+</code>
+                                                    </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unLikeContent"></a>
+                    <span class="name">
+                        <span ><b>unLikeContent</b></span>
+                        <a href="#unLikeContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="274" class="link-to-prism">libs/database/src/lib/services/content.service.ts:274</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateContentFromId"></a>
+                    <span class="name">
+                        <span ><b>updateContentFromId</b></span>
+                        <a href="#updateContentFromId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="184" class="link-to-prism">libs/database/src/lib/services/content.service.ts:184</a></div>
+                        </td>
+                    </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>id</td>
+                                            </tr>
+                                            <tr>
+                                                    <td>contentDto</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Model } from &#x27;mongoose&#x27;;
+import { Injectable } from &#x27;@nestjs/common&#x27;;
+import { InjectModel } from &#x27;@nestjs/mongoose&#x27;;
+import { AccountDocument } from &#x27;../schemas/account.schema&#x27;;
+import { CredentialDocument, CredentialModel } from &#x27;../schemas&#x27;;
+import { User, UserDocument, UserType } from &#x27;../schemas/user.schema&#x27;;
+import { ContentDocument, Content } from &#x27;../schemas/content.schema&#x27;;
+import {
+  EngagementDocument,
+  EngagementType
+} from &#x27;../schemas/engagement.schema&#x27;;
+import { createPagination } from &#x27;../utils/common&#x27;;
+import { PageDto, UpdateUserDto } from &#x27;../dtos/user.dto&#x27;;
+import {
+  SaveContentDto,
+  ContentPayloadDto,
+  Author,
+  CastcleContentQueryOptions,
+  DEFAULT_CONTENT_QUERY_OPTIONS,
+  ContentResponse,
+  ContentType,
+  QuotePayload,
+  RecastPayload
+} from &#x27;../dtos/content.dto&#x27;;
+import { RevisionDocument } from &#x27;../schemas/revision.schema&#x27;;
+import { EntityVisibility } from &#x27;../dtos/common.dto&#x27;;
+
+@Injectable()
+export class ContentService {
+  constructor(
+    @InjectModel(&#x27;Account&#x27;) public _accountModel: Model&lt;AccountDocument&gt;,
+    @InjectModel(&#x27;Credential&#x27;)
+    public _credentialModel: CredentialModel,
+    @InjectModel(&#x27;User&#x27;)
+    public _userModel: Model&lt;UserDocument&gt;,
+    @InjectModel(&#x27;Content&#x27;)
+    public _contentModel: Model&lt;ContentDocument&gt;,
+    @InjectModel(&#x27;Revision&#x27;)
+    public _revisionModel: Model&lt;RevisionDocument&gt;,
+    @InjectModel(&#x27;Engagement&#x27;)
+    public _engagementModel: Model&lt;EngagementDocument&gt;
+  ) {}
+
+  /**
+   *
+   * @param {UserDocument} user the user that create this content if contentDto has no author this will be author by default
+   * @param {SaveContentDto} contentDto the content Dto that required for create a conent
+   * @returns {ContentDocument} content.save() result
+   */
+  async createContentFromUser(user: UserDocument, contentDto: SaveContentDto) {
+    let author: Author;
+    if (!contentDto.author) author &#x3D; this._getAuthorFromUser(user);
+    else {
+      const page &#x3D; await this._userModel.findById(contentDto.author.id);
+      author &#x3D; this._getAuthorFromUser(page);
+    }
+    const newContent &#x3D; {
+      author: author,
+      payload: contentDto.payload,
+      revisionCount: 0,
+      type: contentDto.type,
+      visibility: EntityVisibility.Publish
+    } as Content;
+    const content &#x3D; new this._contentModel(newContent);
+    return content.save();
+  }
+
+  /**
+   *
+   * @param {string} id get content from content&#x27;s id
+   * @returns {ContentDocument}
+   */
+  getContentFromId &#x3D; async (id: string) &#x3D;&gt; {
+    const content &#x3D; await this._contentModel.findById(id).exec();
+    if (content &amp;&amp; content.visibility &#x3D;&#x3D;&#x3D; EntityVisibility.Publish)
+      return content;
+    return null;
+  };
+
+  /**
+   * Set content visibility to deleted
+   * @param {string} id
+   * @returns {ContentDocument}
+   */
+  deleteContentFromId &#x3D; async (id: string) &#x3D;&gt; {
+    const content &#x3D; await this._contentModel.findById(id).exec();
+    content.visibility &#x3D; EntityVisibility.Deleted;
+    if (
+      content.type &#x3D;&#x3D;&#x3D; ContentType.Quote ||
+      content.type &#x3D;&#x3D;&#x3D; ContentType.Recast
+    ) {
+      const sourceContent &#x3D; await this._contentModel
+        .findById((content.payload as RecastPayload).source)
+        .exec();
+      const engagementType &#x3D;
+        content.type &#x3D;&#x3D;&#x3D; ContentType.Quote
+          ? EngagementType.Quote
+          : EngagementType.Recast;
+      const incEngagment: { [key: string]: number } &#x3D; {};
+      incEngagment[&#x60;engagements.${engagementType}.count&#x60;] &#x3D; -1;
+      //use update to byPass save hook to prevent recursive and revision api
+      const updateResult &#x3D; await this._contentModel
+        .updateOne(
+          { _id: sourceContent._id },
+          {
+            $inc: incEngagment
+          }
+        )
+        .exec();
+      //if update not success return false
+      console.log(updateResult);
+    }
+    return content.save();
+  };
+
+  /**
+   * update aggregator of recast/quote and get content status back to publish
+   * @param {streieng} id of content
+   * @returns {ContentDocument | null}
+   */
+  recoverContentFromId &#x3D; async (id: string) &#x3D;&gt; {
+    const content &#x3D; await this._contentModel.findById(id).exec();
+    if (content.visibility !&#x3D;&#x3D; EntityVisibility.Publish) {
+      //recover engagement quote/recast
+      if (
+        content.type &#x3D;&#x3D;&#x3D; ContentType.Quote ||
+        content.type &#x3D;&#x3D;&#x3D; ContentType.Recast
+      ) {
+        const sourceContent &#x3D; await this._contentModel
+          .findById((content.payload as RecastPayload).source)
+          .exec();
+        const engagementType &#x3D;
+          content.type &#x3D;&#x3D;&#x3D; ContentType.Quote
+            ? EngagementType.Quote
+            : EngagementType.Recast;
+        const incEngagment: { [key: string]: number } &#x3D; {};
+        incEngagment[&#x60;engagements.${engagementType}.count&#x60;] &#x3D; 1;
+        //use update to byPass save hook to prevent recursive and revision api
+        const updateResult &#x3D; await this._contentModel
+          .updateOne(
+            { _id: sourceContent._id },
+            {
+              $inc: incEngagment
+            }
+          )
+          .exec();
+        //if update not success return false
+        console.log(updateResult);
+      }
+      content.visibility &#x3D; EntityVisibility.Publish;
+      return content.save();
+    } else return null; //content already recover;
+  };
+
+  /**
+   *
+   * @param {string} id
+   * @param {SaveContentDto} contentDto
+   * @returns {ContentDocument}
+   */
+  updateContentFromId &#x3D; async (id: string, contentDto: SaveContentDto) &#x3D;&gt; {
+    const content &#x3D; await this._contentModel.findById(id).exec();
+    content.payload &#x3D; contentDto.payload;
+    content.type &#x3D; contentDto.type;
+    return content.save();
+  };
+
+  /**
+   * check content.author.id &#x3D;&#x3D;&#x3D; user._id
+   * @param {UserDocument} user
+   * @param {ContentDocument} content
+   * @returns {Promise&lt;boolean&gt;}
+   */
+  checkUserPermissionForEditContent &#x3D; async (
+    user: UserDocument,
+    content: ContentDocument
+  ) &#x3D;&gt; content.author.id &#x3D;&#x3D;&#x3D; user._id;
+
+  /**
+   *
+   * @param {UserDocument} user
+   * @param {CastcleQueryOptions} options contain option for sorting page &#x3D; skip + 1,
+   * @returns {Promise&lt;{items:ContentDocument[], total:number, pagination: {Pagination}}&gt;}
+   */
+  getContentsFromUser &#x3D; async (
+    user: UserDocument,
+    options: CastcleContentQueryOptions &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS
+  ) &#x3D;&gt; {
+    const findFilter: {
+      &#x27;author.id&#x27;: any;
+      type?: string;
+      visibility: EntityVisibility;
+    } &#x3D; {
+      &#x27;author.id&#x27;: user._id,
+      visibility: EntityVisibility.Publish
+    };
+    if (options.type) findFilter.type &#x3D; options.type;
+    const query &#x3D; this._contentModel
+      .find(findFilter)
+      .skip(options.page - 1)
+      .limit(options.limit);
+    const totalDocument &#x3D; await this._contentModel.count(findFilter).exec();
+    if (options.sortBy.type &#x3D;&#x3D;&#x3D; &#x27;desc&#x27;) {
+      return {
+        total: totalDocument,
+        items: await query.sort(&#x60;-${options.sortBy.field}&#x60;).exec(),
+        pagination: createPagination(options, totalDocument)
+      };
+    } else
+      return {
+        total: totalDocument,
+        items: await query.sort(&#x60;${options.sortBy.field}&#x60;).exec(),
+        pagination: createPagination(options, totalDocument)
+      };
+  };
+
+  getContentRevisions &#x3D; async (content: ContentDocument) &#x3D;&gt;
+    this._revisionModel
+      .find({
+        objectRef: {
+          $ref: &#x27;content&#x27;,
+          $id: content._id
+        }
+      })
+      .exec();
+
+  likeContent &#x3D; async (content: ContentDocument, user: UserDocument) &#x3D;&gt; {
+    let engagement &#x3D; await this._engagementModel.findOne({
+      user: user._id,
+      targetRef: {
+        $ref: &#x27;content&#x27;,
+        $id: content._id
+      },
+      type: EngagementType.Like
+    });
+    if (!engagement)
+      engagement &#x3D; new this._engagementModel({
+        type: EngagementType.Like,
+        user: user._id,
+        targetRef: {
+          $ref: &#x27;content&#x27;,
+          $id: content._id
+        },
+        visibility: EntityVisibility.Publish
+      });
+    engagement.type &#x3D; EngagementType.Like;
+    engagement.visibility &#x3D; EntityVisibility.Publish;
+    return engagement.save();
+  };
+
+  unLikeContent &#x3D; async (content: ContentDocument, user: UserDocument) &#x3D;&gt; {
+    const engagement &#x3D; await this._engagementModel
+      .findOne({
+        user: user._id,
+        targetRef: {
+          $ref: &#x27;content&#x27;,
+          $id: content._id
+        },
+        type: EngagementType.Like
+      })
+      .exec();
+    if (!engagement) return null;
+    return engagement.remove();
+  };
+
+  /**
+   * get how many user like this content by populate user from engagement and filter it with user._id
+   * @param {ContentDocument} content current content
+   * @param {UserDocument} user current user
+   * @returns {liked:boolean, participant:string[]}
+   */
+  getLikeParticipants &#x3D; async (
+    content: ContentDocument,
+    user: UserDocument
+  ) &#x3D;&gt; {
+    //get whether use is like
+    const likeResult &#x3D; await this._engagementModel
+      .find({
+        targetRef: {
+          $ref: &#x27;content&#x27;,
+          $id: content._id
+        },
+        type: EngagementType.Like,
+        visibility: EntityVisibility.Publish
+      })
+      .populate(&#x27;user&#x27;)
+      .exec();
+    const liked &#x3D; likeResult.find(
+      (engagement) &#x3D;&gt; engagement.user._id &#x3D;&#x3D;&#x3D; user._id
+    )
+      ? true
+      : false;
+    const participants &#x3D; likeResult.map((eng) &#x3D;&gt; eng.user.displayName);
+    return { liked, participants };
+  };
+
+  /**
+   * transform User &#x3D;&gt; Author object for create a content and use as DTO
+   * @private
+   * @param {UserDocument} user
+   * @returns {Author}
+   */
+  _getAuthorFromUser &#x3D; (user: UserDocument) &#x3D;&gt; {
+    const author: Author &#x3D; {
+      id: user._id,
+      avatar:
+        user.profile &amp;&amp; user.profile.images &amp;&amp; user.profile.images.avatar
+          ? user.profile.images.avatar
+          : null,
+      castcleId: user.displayId,
+      displayName: user.displayName,
+      followed: false,
+      type: user.type &#x3D;&#x3D;&#x3D; UserType.Page ? UserType.Page : UserType.People,
+      verified: user.verified ? true : false
+    };
+    return author;
+  };
+
+  quoteContentFromUser &#x3D; async (
+    content: ContentDocument,
+    user: UserDocument,
+    message?: string
+  ) &#x3D;&gt; {
+    const author &#x3D; this._getAuthorFromUser(user);
+    const sourceContentId &#x3D;
+      content.type &#x3D;&#x3D;&#x3D; ContentType.Recast || content.type &#x3D;&#x3D;&#x3D; ContentType.Quote
+        ? (content.payload as RecastPayload).source
+        : content._id;
+    const newContent &#x3D; {
+      author: author,
+      payload: {
+        source: sourceContentId,
+        message: message
+      } as QuotePayload,
+      revisionCount: 0,
+      type: ContentType.Quote
+    } as Content;
+    const quoteContent &#x3D; await new this._contentModel(newContent).save();
+    const engagement &#x3D; await new this._engagementModel({
+      type: EngagementType.Quote,
+      user: user._id,
+      targetRef: {
+        $ref: &#x27;content&#x27;,
+        $id: sourceContentId
+      },
+      visibility: EntityVisibility.Publish
+    }).save();
+    return { quoteContent, engagement };
+  };
+
+  recastContentFromUser &#x3D; async (
+    content: ContentDocument,
+    user: UserDocument
+  ) &#x3D;&gt; {
+    const author &#x3D; this._getAuthorFromUser(user);
+    const sourceContentId &#x3D;
+      content.type &#x3D;&#x3D;&#x3D; ContentType.Recast || content.type &#x3D;&#x3D;&#x3D; ContentType.Quote
+        ? (content.payload as RecastPayload).source
+        : content._id;
+    const newContent &#x3D; {
+      author: author,
+      payload: {
+        source: sourceContentId
+      } as RecastPayload,
+      revisionCount: 0,
+      type: ContentType.Recast
+    } as Content;
+    const recastContent &#x3D; await new this._contentModel(newContent).save();
+    const engagement &#x3D; await new this._engagementModel({
+      type: EngagementType.Recast,
+      user: user._id,
+      targetRef: {
+        $ref: &#x27;content&#x27;,
+        $id: sourceContentId
+      },
+      visibility: EntityVisibility.Publish
+    }).save();
+    return { recastContent, engagement };
+  };
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ContentService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1769 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>castcle-api documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">castcle-api documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content controller">
+                   <div class="content-data">
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Controllers</li>
+  <li >AppController</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>apps/users/src/app/app.controller.ts</code>
+        </p>
+
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteMyData" >deleteMyData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#follow" >follow</a>
+                            </li>
+                            <li>
+                                <a href="#getData" >getData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMyContents" >getMyContents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMyData" >getMyData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserById" >getUserById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserContents" >getUserContents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserFollower" >getUserFollower</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUserFollowing" >getUserFollowing</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#unfollow" >unfollow</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateMyData" >updateMyData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteMyData"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteMyData</b></span>
+                        <a href="#deleteMyData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteMyData(req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiResponse({status: 204})<br />@ApiBearerAuth()<br />@UseInterceptors(CredentialInterceptor)<br />@Delete(&#x27;me&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="follow"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>follow</b></span>
+                        <a href="#follow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>follow(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>, authorId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiResponse({status: 204})<br />@ApiBearerAuth()<br />@UseInterceptors(CredentialInterceptor)<br />@Put(&#x27;:id/follow&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="297"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:297</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>authorId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getData"></a>
+                    <span class="name">
+                        <span ><b>getData</b></span>
+                        <a href="#getData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getData()</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@Get()<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMyContents"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getMyContents</b></span>
+                        <a href="#getMyContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMyContents(req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOkResponse({type: ContentsResponse})<br />@ApiBearerAuth()<br />@UseInterceptors(ContentsInterceptor)<br />@Get(&#x27;me/contents&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:217</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ContentsResponse&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMyData"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getMyData</b></span>
+                        <a href="#getMyData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMyData(req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOkResponse({type: UserResponseDto})<br />@ApiBearerAuth()<br />@UseInterceptors(ImageInterceptor)<br />@Get(&#x27;me&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserById"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserById</b></span>
+                        <a href="#getUserById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserById(req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOkResponse({type: UserResponseDto})<br />@ApiBearerAuth()<br />@UseInterceptors(ImageInterceptor)<br />@Get(&#x27;:id&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserContents"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserContents</b></span>
+                        <a href="#getUserContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserContents(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>, sortByOption: literal type, pageOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, limitOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, contentTypeOption: <a href="../classes/Content.html" target="_self">ContentType</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOkResponse({type: ContentsResponse})<br />@ApiQuery({name: &#x27;type&#x27;, enum: ContentType})<br />@ApiBearerAuth()<br />@ApiQuery({name: &#x27;sortBy&#x27;, enum: SortByEnum, required: false})<br />@ApiQuery({name: &#x27;page&#x27;, type: Number, required: false})<br />@ApiQuery({name: &#x27;limit&#x27;, type: Number, required: false})<br />@ApiQuery({name: &#x27;type&#x27;, enum: ContentType, required: false})<br />@UseInterceptors(ContentsInterceptor)<br />@Get(&#x27;:id/contents&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="262"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:262</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>sortByOption</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.sortBy</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>pageOption</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.page</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>limitOption</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.limit</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>contentTypeOption</td>
+                                    <td>
+                                                <code><a href="../classes/Content.html" target="_self" >ContentType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.type</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ContentsResponse&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserFollower"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserFollower</b></span>
+                        <a href="#getUserFollower"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserFollower(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>, sortByOption: literal type, pageOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, limitOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, userTypeOption?: <a href="../classes/User.html" target="_self">UserType</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOkResponse({type: FollowResponse})<br />@ApiBearerAuth()<br />@ApiQuery({name: &#x27;sortBy&#x27;, enum: SortByEnum, required: false})<br />@ApiQuery({name: &#x27;page&#x27;, type: Number, required: false})<br />@ApiQuery({name: &#x27;limit&#x27;, type: Number, required: false})<br />@ApiQuery({name: &#x27;type&#x27;, enum: UserType, required: false})<br />@UseInterceptors(CredentialInterceptor)<br />@Get(&#x27;:id/follower&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="361"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:361</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>sortByOption</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.sortBy</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>pageOption</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.page</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>limitOption</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.limit</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>userTypeOption</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >UserType</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/FollowResponse.html" target="_self" >Promise&lt;FollowResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserFollowing"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getUserFollowing</b></span>
+                        <a href="#getUserFollowing"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserFollowing(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>, sortByOption: literal type, pageOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, limitOption: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, userTypeOption?: <a href="../classes/User.html" target="_self">UserType</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiOkResponse({type: FollowResponse})<br />@ApiBearerAuth()<br />@ApiQuery({name: &#x27;sortBy&#x27;, enum: SortByEnum, required: false})<br />@ApiQuery({name: &#x27;page&#x27;, type: Number, required: false})<br />@ApiQuery({name: &#x27;limit&#x27;, type: Number, required: false})<br />@ApiQuery({name: &#x27;type&#x27;, enum: UserType, required: false})<br />@UseInterceptors(FollowInterceptor)<br />@Get(&#x27;:id/following&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="416"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:416</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>sortByOption</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.sortBy</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>pageOption</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.page</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>limitOption</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_CONTENT_QUERY_OPTIONS.limit</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>userTypeOption</td>
+                                    <td>
+                                                <code><a href="../classes/User.html" target="_self" >UserType</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/FollowResponse.html" target="_self" >Promise&lt;FollowResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unfollow"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>unfollow</b></span>
+                        <a href="#unfollow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>unfollow(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>, authorId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiResponse({status: 204})<br />@ApiBearerAuth()<br />@UseInterceptors(CredentialInterceptor)<br />@Put(&#x27;:id/unfollow&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="319"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:319</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>authorId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateMyData"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateMyData</b></span>
+                        <a href="#updateMyData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateMyData(req: <a href="../interfaces/CredentialRequest.html" target="_self">CredentialRequest</a>, body: <a href="../classes/UpdateUserDto.html" target="_self">UpdateUserDto</a>)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@ApiBody({type: UpdateUserDto})<br />@ApiOkResponse({type: UserResponseDto})<br />@ApiBearerAuth()<br />@UseInterceptors(ImageInterceptor)<br />@Put(&#x27;me&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">apps/users/src/app/app.controller.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>req</td>
+                                    <td>
+                                                <code><a href="../interfaces/CredentialRequest.html" target="_self" >CredentialRequest</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>body</td>
+                                    <td>
+                                                <code><a href="../classes/UpdateUserDto.html" target="_self" >UpdateUserDto</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">/*
+ * Copyright (c) 2021, Castcle and/or its affiliates. All rights reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * This code is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License version 3 only, as
+ * published by the Free Software Foundation.
+ *
+ * This code is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+ * version 3 for more details (a copy is included in the LICENSE file that
+ * accompanied this code).
+ *
+ * You should have received a copy of the GNU General Public License version
+ * 3 along with this work; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * Please contact Castcle, 22 Phet Kasem 47/2 Alley, Bang Khae, Bangkok,
+ * Thailand 10160, or visit www.castcle.com if you need additional information
+ * or have any questions.
+ */
+
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Put,
+  Req,
+  UseInterceptors
+} from &#x27;@nestjs/common&#x27;;
+import { AppService } from &#x27;./app.service&#x27;;
+import {
+  UserService,
+  ContentService,
+  AuthenticationService
+} from &#x27;@castcle-api/database&#x27;;
+import {
+  ImageInterceptor,
+  FollowInterceptor
+} from &#x27;./interceptors/image.interceptor&#x27;;
+import {
+  CredentialInterceptor,
+  CredentialRequest,
+  ContentsInterceptor
+} from &#x27;@castcle-api/utils/interceptors&#x27;;
+import { CastLogger, CastLoggerOptions } from &#x27;@castcle-api/logger&#x27;;
+import { CastcleException, CastcleStatus } from &#x27;@castcle-api/utils/exception&#x27;;
+import {
+  ApiBearerAuth,
+  ApiBody,
+  ApiHeader,
+  ApiOkResponse,
+  ApiProperty,
+  ApiQuery,
+  ApiResponse
+} from &#x27;@nestjs/swagger&#x27;;
+import {
+  ContentPayloadDto,
+  ContentType,
+  DEFAULT_CONTENT_QUERY_OPTIONS,
+  FollowResponse,
+  UpdateUserDto,
+  UserResponseDto
+} from &#x27;@castcle-api/database/dtos&#x27;;
+import {
+  SortByPipe,
+  PagePipe,
+  LimitPipe,
+  ContentTypePipe,
+  SortByEnum
+} from &#x27;@castcle-api/utils/pipes&#x27;;
+import { UserDocument, UserType } from &#x27;@castcle-api/database/schemas&#x27;;
+import { ContentsResponse } from &#x27;@castcle-api/database/dtos&#x27;;
+import { Query } from &#x27;@nestjs/common&#x27;;
+import { Configs } from &#x27;@castcle-api/environments&#x27;;
+let logger: CastLogger;
+
+@ApiHeader({
+  name: Configs.RequiredHeaders.AcceptLanguague.name,
+  description: Configs.RequiredHeaders.AcceptLanguague.description,
+  example: Configs.RequiredHeaders.AcceptLanguague.example,
+  required: true
+})
+@ApiHeader({
+  name: Configs.RequiredHeaders.AcceptVersion.name,
+  description: Configs.RequiredHeaders.AcceptVersion.description,
+  example: Configs.RequiredHeaders.AcceptVersion.example,
+  required: true
+})
+@Controller({
+  version: &#x27;1.0&#x27;
+})
+@Controller()
+export class AppController {
+  constructor(
+    private readonly appService: AppService,
+    private userService: UserService,
+    private contentService: ContentService,
+    private authService: AuthenticationService
+  ) {
+    logger &#x3D; new CastLogger(AppController.name, CastLoggerOptions);
+  }
+
+  /**
+   *
+   * @param {string} idOrCastcleId
+   * @param {CredentialRequest} req
+   * @returns {UserDocument} from userService.getUserFromId() or authService.getUserFromCastcleId
+   * @throws {CastcleException} with CastcleStatus.REQUEST_URL_NOT_FOUND
+   */
+  _getUserFromIdOrCastcleId &#x3D; async (
+    idOrCastcleId: string,
+    req: CredentialRequest
+  ) &#x3D;&gt; {
+    const user &#x3D; await this.userService.getUserFromId(idOrCastcleId);
+    if (user) return user;
+    const userFromCastcleId &#x3D; await this.authService.getUserFromCastcleId(
+      idOrCastcleId
+    );
+    if (userFromCastcleId) return userFromCastcleId;
+    else
+      throw new CastcleException(
+        CastcleStatus.REQUEST_URL_NOT_FOUND,
+        req.$language
+      );
+  };
+
+  @Get()
+  getData() {
+    logger.log(&#x27;Root&#x27;);
+    return this.appService.getData();
+  }
+
+  @ApiOkResponse({
+    type: UserResponseDto
+  })
+  @ApiBearerAuth()
+  @UseInterceptors(ImageInterceptor)
+  @Get(&#x27;me&#x27;)
+  async getMyData(@Req() req: CredentialRequest) {
+    //UserService
+    const user &#x3D; await this.userService.getUserFromCredential(req.$credential);
+    if (user) return await user.toUserResponse();
+    else
+      throw new CastcleException(
+        CastcleStatus.INVALID_ACCESS_TOKEN,
+        req.$language
+      );
+  }
+
+  @ApiOkResponse({
+    type: UserResponseDto
+  })
+  @ApiBearerAuth()
+  @UseInterceptors(ImageInterceptor)
+  @Get(&#x27;:id&#x27;)
+  async getUserById(@Req() req: CredentialRequest, @Param(&#x27;id&#x27;) id: string) {
+    //UserService
+    const user &#x3D; await this._getUserFromIdOrCastcleId(id, req);
+    return await user.toUserResponse();
+  }
+
+  @ApiBody({
+    type: UpdateUserDto
+  })
+  @ApiOkResponse({
+    type: UserResponseDto
+  })
+  @ApiBearerAuth()
+  @UseInterceptors(ImageInterceptor)
+  @Put(&#x27;me&#x27;)
+  async updateMyData(
+    @Req() req: CredentialRequest,
+    @Body() body: UpdateUserDto
+  ) {
+    const user &#x3D; await this.userService.getUserFromCredential(req.$credential);
+    if (user) {
+      const afterUpdateUser &#x3D; await this.userService.updateUser(user, body);
+      const response &#x3D; await afterUpdateUser.toUserResponse();
+      return response;
+    } else
+      throw new CastcleException(
+        CastcleStatus.INVALID_ACCESS_TOKEN,
+        req.$language
+      );
+  }
+
+  @ApiResponse({
+    status: 204
+  })
+  @ApiBearerAuth()
+  @UseInterceptors(CredentialInterceptor)
+  @Delete(&#x27;me&#x27;)
+  async deleteMyData(@Req() req: CredentialRequest) {
+    const user &#x3D; await this.userService.getUserFromCredential(req.$credential);
+    if (user) {
+      //await user.delete();
+      await this.userService.deactive(user);
+      return &#x27;&#x27;;
+    } else {
+      throw new CastcleException(
+        CastcleStatus.INVALID_ACCESS_TOKEN,
+        req.$language
+      );
+    }
+  }
+
+  @ApiOkResponse({
+    type: ContentsResponse
+  })
+  @ApiBearerAuth()
+  @UseInterceptors(ContentsInterceptor)
+  @Get(&#x27;me/contents&#x27;)
+  async getMyContents(
+    @Req() req: CredentialRequest
+  ): Promise&lt;ContentsResponse&gt; {
+    //UserService
+    const user &#x3D; await this.userService.getUserFromCredential(req.$credential);
+    if (user) {
+      const contents &#x3D; await this.contentService.getContentsFromUser(user);
+      return {
+        payload: contents.items.map((item) &#x3D;&gt; item.toContentPayload()),
+        pagination: contents.pagination
+      } as ContentsResponse;
+    } else
+      throw new CastcleException(
+        CastcleStatus.INVALID_ACCESS_TOKEN,
+        req.$language
+      );
+  }
+
+  @ApiOkResponse({
+    type: ContentsResponse
+  })
+  @ApiQuery({ name: &#x27;type&#x27;, enum: ContentType })
+  @ApiBearerAuth()
+  @ApiQuery({
+    name: &#x27;sortBy&#x27;,
+    enum: SortByEnum,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;page&#x27;,
+    type: Number,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;limit&#x27;,
+    type: Number,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;type&#x27;,
+    enum: ContentType,
+    required: false
+  })
+  @UseInterceptors(ContentsInterceptor)
+  @Get(&#x27;:id/contents&#x27;)
+  async getUserContents(
+    @Param(&#x27;id&#x27;) id: string,
+    @Req() req: CredentialRequest,
+    @Query(&#x27;sortBy&#x27;, SortByPipe)
+    sortByOption: {
+      field: string;
+      type: &#x27;desc&#x27; | &#x27;asc&#x27;;
+    } &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.sortBy,
+    @Query(&#x27;page&#x27;, PagePipe)
+    pageOption: number &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.page,
+    @Query(&#x27;limit&#x27;, LimitPipe)
+    limitOption: number &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.limit,
+    @Query(&#x27;type&#x27;, ContentTypePipe)
+    contentTypeOption: ContentType &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.type
+  ): Promise&lt;ContentsResponse&gt; {
+    //UserService
+    const user &#x3D; await this._getUserFromIdOrCastcleId(id, req);
+    const contents &#x3D; await this.contentService.getContentsFromUser(user, {
+      limit: limitOption,
+      page: pageOption,
+      sortBy: sortByOption,
+      type: contentTypeOption
+    });
+    return {
+      payload: contents.items.map((item) &#x3D;&gt; item.toContentPayload()),
+      pagination: contents.pagination
+    } as ContentsResponse;
+  }
+
+  @ApiResponse({
+    status: 204
+  })
+  @ApiBearerAuth()
+  @UseInterceptors(CredentialInterceptor)
+  @Put(&#x27;:id/follow&#x27;)
+  async follow(
+    @Param(&#x27;id&#x27;) id: string,
+    @Req() req: CredentialRequest,
+    @Body(&#x27;authorId&#x27;) authorId: string
+  ) {
+    const followedUser &#x3D; await this._getUserFromIdOrCastcleId(id, req);
+    const currentUser &#x3D; await this._getUserFromIdOrCastcleId(authorId, req);
+    if (!currentUser.ownerAccount &#x3D;&#x3D;&#x3D; req.$credential.account._id)
+      throw new CastcleException(
+        CastcleStatus.FORBIDDEN_REQUEST,
+        req.$language
+      );
+    await currentUser.follow(followedUser);
+    return &#x27;&#x27;;
+  }
+
+  @ApiResponse({
+    status: 204
+  })
+  @ApiBearerAuth()
+  @UseInterceptors(CredentialInterceptor)
+  @Put(&#x27;:id/unfollow&#x27;)
+  async unfollow(
+    @Param(&#x27;id&#x27;) id: string,
+    @Req() req: CredentialRequest,
+    @Body(&#x27;authorId&#x27;) authorId: string
+  ) {
+    const followedUser &#x3D; await this._getUserFromIdOrCastcleId(id, req);
+    const currentUser &#x3D; await this._getUserFromIdOrCastcleId(authorId, req);
+    if (!currentUser.ownerAccount &#x3D;&#x3D;&#x3D; req.$credential.account._id)
+      throw new CastcleException(
+        CastcleStatus.FORBIDDEN_REQUEST,
+        req.$language
+      );
+    await currentUser.unfollow(followedUser);
+    return &#x27;&#x27;;
+  }
+
+  @ApiOkResponse({
+    type: FollowResponse
+  })
+  @ApiBearerAuth()
+  @ApiQuery({
+    name: &#x27;sortBy&#x27;,
+    enum: SortByEnum,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;page&#x27;,
+    type: Number,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;limit&#x27;,
+    type: Number,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;type&#x27;,
+    enum: UserType,
+    required: false
+  })
+  @UseInterceptors(CredentialInterceptor)
+  @Get(&#x27;:id/follower&#x27;)
+  async getUserFollower(
+    @Param(&#x27;id&#x27;) id: string,
+    @Req() req: CredentialRequest,
+    @Query(&#x27;sortBy&#x27;, SortByPipe)
+    sortByOption: {
+      field: string;
+      type: &#x27;desc&#x27; | &#x27;asc&#x27;;
+    } &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.sortBy,
+    @Query(&#x27;page&#x27;, PagePipe)
+    pageOption: number &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.page,
+    @Query(&#x27;limit&#x27;, LimitPipe)
+    limitOption: number &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.limit,
+    @Query(&#x27;type&#x27;)
+    userTypeOption?: UserType
+  ): Promise&lt;FollowResponse&gt; {
+    //UserService
+    const user &#x3D; await this._getUserFromIdOrCastcleId(id, req);
+    const followers &#x3D; await this.userService.getFollower(user, {
+      limit: limitOption,
+      page: pageOption,
+      sortBy: sortByOption,
+      type: userTypeOption
+    });
+    return {
+      payload: followers.items,
+      pagination: followers.pagination
+    } as FollowResponse;
+  }
+
+  @ApiOkResponse({
+    type: FollowResponse
+  })
+  @ApiBearerAuth()
+  @ApiQuery({
+    name: &#x27;sortBy&#x27;,
+    enum: SortByEnum,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;page&#x27;,
+    type: Number,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;limit&#x27;,
+    type: Number,
+    required: false
+  })
+  @ApiQuery({
+    name: &#x27;type&#x27;,
+    enum: UserType,
+    required: false
+  })
+  @UseInterceptors(FollowInterceptor)
+  @Get(&#x27;:id/following&#x27;)
+  async getUserFollowing(
+    @Param(&#x27;id&#x27;) id: string,
+    @Req() req: CredentialRequest,
+    @Query(&#x27;sortBy&#x27;, SortByPipe)
+    sortByOption: {
+      field: string;
+      type: &#x27;desc&#x27; | &#x27;asc&#x27;;
+    } &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.sortBy,
+    @Query(&#x27;page&#x27;, PagePipe)
+    pageOption: number &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.page,
+    @Query(&#x27;limit&#x27;, LimitPipe)
+    limitOption: number &#x3D; DEFAULT_CONTENT_QUERY_OPTIONS.limit,
+    @Query(&#x27;type&#x27;)
+    userTypeOption?: UserType
+  ): Promise&lt;FollowResponse&gt; {
+    //UserService
+    const user &#x3D; await this._getUserFromIdOrCastcleId(id, req);
+    const followers &#x3D; await this.userService.getFollowing(user, {
+      limit: limitOption,
+      page: pageOption,
+      sortBy: sortByOption,
+      type: userTypeOption
+    });
+    return {
+      payload: followers.items,
+      pagination: followers.pagination
+    } as FollowResponse;
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'controller';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppController-6.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
